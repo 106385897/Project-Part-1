@@ -1,5 +1,5 @@
 /**Maliki/
-/* ==========================================================================
+
    Base Styles & Reset 
    ========================================================================== */
 * {
@@ -17,17 +17,14 @@ body {
 
 h1, h2, h3, h4 {
     margin-bottom: 15px;
-    color: #081935; /* Updated to Logo Navy */
+    color: #081935; 
 }
 
-/* ==========================================================================
-   Header Styles 
-   ========================================================================== */
 #main-header {
-    background-color: #ffffff; /* Changed to white to seamlessly blend with the logo */
+    background-color: #ffffff; 
     color: #081935;
     padding: 15px 0;
-    border-bottom: 4px solid #b58e42; /* Logo Gold border for separation */
+    border-bottom: 4px solid #b58e42; 
 }
 
 .header-container {
@@ -38,7 +35,6 @@ h1, h2, h3, h4 {
     padding: 0 20px;
 }
 
-/* Updated logo class: removed border radius so the whole crest shows */
 .logo {
     max-width: 220px; 
     height: auto;
@@ -51,13 +47,13 @@ h1, h2, h3, h4 {
 }
 
 .title-group h1 {
-    color: #081935; /* Logo Navy */
+    color: #081935; 
     margin-bottom: 5px;
     font-size: 2.4rem;
 }
 
 .title-group h2 {
-    color: #b58e42; /* Logo Gold */
+    color: #b58e42; 
     font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 0;
@@ -65,11 +61,9 @@ h1, h2, h3, h4 {
     letter-spacing: 1px;
 }
 
-/* ==========================================================================
-   Navigation Menu 
-   ========================================================================== */
+
 nav {
-    background-color: #081935; /* Logo Navy */
+    background-color: #081935; 
 }
 
 .nav-menu {
@@ -91,7 +85,7 @@ nav {
 
 .nav-menu li a:hover,
 .nav-menu li a:focus {
-    background-color: #b58e42; /* Logo Gold */
+    background-color: #b58e42; 
     color: #ffffff;
     outline: none; 
 }
@@ -102,13 +96,11 @@ nav {
 }
 
 .nav-menu li a.active {
-    background-color: #0a2044; /* Slightly lighter navy for active state */
-    border-bottom: 4px solid #b58e42; /* Logo Gold */
+    background-color: #0a2044; 
+    border-bottom: 4px solid #b58e42; 
 }
 
-/* ==========================================================================
-   Main Content Layout
-   ========================================================================== */
+
 main {
     max-width: 1200px;
     margin: 0 auto;
@@ -128,7 +120,7 @@ main {
     margin: 20px 0;
 }
 
-/* Hero Section */
+
 #hero-section {
     background-image: linear-gradient(135deg, rgba(8, 25, 53, 0.9) 0%, rgba(181, 142, 66, 0.8) 100%), 
                       url('https://placehold.co/1200x400/eeeeee/ccc?text=Digital+Network+Background');
@@ -172,9 +164,7 @@ figcaption {
     color: #666;
 }
 
-/* ==========================================================================
-   Grid Layouts & Components
-   ========================================================================== */
+
 .focus-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -186,7 +176,7 @@ figcaption {
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 8px;
-    border-left: 5px solid #b58e42; /* Logo Gold */
+    border-left: 5px solid #b58e42;
     transition: transform 0.3s ease;
 }
 
@@ -195,7 +185,7 @@ figcaption {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* Split Section */
+
 .split-section {
     display: flex;
     flex-wrap: wrap;
@@ -220,7 +210,7 @@ figcaption {
 .testimonial {
     flex: 1;
     min-width: 300px;
-    background-color: #fcf9f2; /* Very light gold tint */
+    background-color: #fcf9f2; 
     padding: 25px;
     border-radius: 8px;
     position: relative;
@@ -237,20 +227,18 @@ cite {
     display: block;
     margin-top: 15px;
     font-weight: bold;
-    color: #081935; /* Logo Navy */
+    color: #081935; 
     font-style: normal;
 }
 
-/* ==========================================================================
-   Footer Styles
-   ========================================================================== */
+
 footer {
-    background-color: #081935; /* Logo Navy */
+    background-color: #081935; 
     color: #ffffff;
     padding: 30px 20px;
     text-align: center;
     margin-top: 40px;
-    border-top: 4px solid #b58e42; /* Logo Gold */
+    border-top: 4px solid #b58e42; 
 }
 
 .footer-links {
@@ -262,7 +250,7 @@ footer {
 }
 
 .footer-links a {
-    color: #b58e42; /* Logo Gold */
+    color: #b58e42; 
     text-decoration: none;
 }
 
@@ -271,9 +259,6 @@ footer {
     color: #ffffff;
 }
 
-/* ==========================================================================
-   Responsive Layout
-   ========================================================================== */
 @media screen and (max-width: 768px) {
     .header-container {
         flex-direction: column;
@@ -320,17 +305,15 @@ body {
 
 h1, h2, h3, h4 {
     margin-bottom: 15px;
-    color: #081935; /* Updated to Logo Navy */
+    color: #081935; 
 }
 
-/* ==========================================================================
-   Header Styles 
-   ========================================================================== */
+
 #main-header {
-    background-color: #ffffff; /* Changed to white to seamlessly blend with the logo */
+    background-color: #ffffff; 
     color: #081935;
     padding: 15px 0;
-    border-bottom: 4px solid #b58e42; /* Logo Gold border for separation */
+    border-bottom: 4px solid #b58e42; 
 }
 
 .header-container {
@@ -341,7 +324,6 @@ h1, h2, h3, h4 {
     padding: 0 20px;
 }
 
-/* Updated logo class: removed border radius so the whole crest shows */
 .logo {
     max-width: 220px; 
     height: auto;
@@ -354,13 +336,13 @@ h1, h2, h3, h4 {
 }
 
 .title-group h1 {
-    color: #081935; /* Logo Navy */
+    color: #081935; 
     margin-bottom: 5px;
     font-size: 2.4rem;
 }
 
 .title-group h2 {
-    color: #b58e42; /* Logo Gold */
+    color: #b58e42; 
     font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 0;
@@ -368,11 +350,9 @@ h1, h2, h3, h4 {
     letter-spacing: 1px;
 }
 
-/* ==========================================================================
-   Navigation Menu 
-   ========================================================================== */
+
 nav {
-    background-color: #081935; /* Logo Navy */
+    background-color: #081935; 
 }
 
 .nav-menu {
@@ -394,7 +374,7 @@ nav {
 
 .nav-menu li a:hover,
 .nav-menu li a:focus {
-    background-color: #b58e42; /* Logo Gold */
+    background-color: #b58e42; 
     color: #ffffff;
     outline: none; 
 }
@@ -405,13 +385,11 @@ nav {
 }
 
 .nav-menu li a.active {
-    background-color: #0a2044; /* Slightly lighter navy for active state */
-    border-bottom: 4px solid #b58e42; /* Logo Gold */
+    background-color: #0a2044; 
+    border-bottom: 4px solid #b58e42; 
 }
 
-/* ==========================================================================
-   Main Content Layout
-   ========================================================================== */
+
 main {
     max-width: 1200px;
     margin: 0 auto;
@@ -431,7 +409,6 @@ main {
     margin: 20px 0;
 }
 
-/* Hero Section */
 #hero-section {
     background-image: linear-gradient(135deg, rgba(8, 25, 53, 0.9) 0%, rgba(181, 142, 66, 0.8) 100%), 
                       url('https://placehold.co/1200x400/eeeeee/ccc?text=Digital+Network+Background');
@@ -475,9 +452,7 @@ figcaption {
     color: #666;
 }
 
-/* ==========================================================================
-   Grid Layouts & Components
-   ========================================================================== */
+
 .focus-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -489,7 +464,7 @@ figcaption {
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 8px;
-    border-left: 5px solid #b58e42; /* Logo Gold */
+    border-left: 5px solid #b58e42; 
     transition: transform 0.3s ease;
 }
 
@@ -498,7 +473,7 @@ figcaption {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* Split Section */
+
 .split-section {
     display: flex;
     flex-wrap: wrap;
@@ -523,7 +498,7 @@ figcaption {
 .testimonial {
     flex: 1;
     min-width: 300px;
-    background-color: #fcf9f2; /* Very light gold tint */
+    background-color: #fcf9f2;
     padding: 25px;
     border-radius: 8px;
     position: relative;
@@ -540,20 +515,18 @@ cite {
     display: block;
     margin-top: 15px;
     font-weight: bold;
-    color: #081935; /* Logo Navy */
+    color: #081935; 
     font-style: normal;
 }
 
-/* ==========================================================================
-   Footer Styles
-   ========================================================================== */
+
 footer {
-    background-color: #081935; /* Logo Navy */
+    background-color: #081935; 
     color: #ffffff;
     padding: 30px 20px;
     text-align: center;
     margin-top: 40px;
-    border-top: 4px solid #b58e42; /* Logo Gold */
+    border-top: 4px solid #b58e42; 
 }
 
 .footer-links {
@@ -565,7 +538,7 @@ footer {
 }
 
 .footer-links a {
-    color: #b58e42; /* Logo Gold */
+    color: #b58e42; 
     text-decoration: none;
 }
 
@@ -574,9 +547,7 @@ footer {
     color: #ffffff;
 }
 
-/* ==========================================================================
-   Responsive Layout
-   ========================================================================== */
+
 @media screen and (max-width: 768px) {
     .header-container {
         flex-direction: column;
@@ -651,8 +622,9 @@ nav {
     display: flex;
     justify-content: center;
     list-style: none;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    max-width: 1200px;
 }
 
 .nav-menu li {
@@ -796,9 +768,6 @@ nav {
 
 
 
-/* ===========================
-   JOBS PAGE
-=========================== */
 
 .job-card{
 
