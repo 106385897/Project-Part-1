@@ -16,7 +16,7 @@
 
         <div class="title-group">
             <h1>Lumina University</h1>
-            <h2>Department of Digital Learning & Research</h2>
+            <h2>Department of Digital Learning &amp; Research</h2>
             <p><em>"Illuminating the Future of Education through Digital Innovation."</em></p>
         </div>
     </div>
@@ -26,7 +26,7 @@
     <ul class="nav-menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="jobs.html">Job Opportunities</a></li>
-        <li><a href="apply.html" class="active">Apply Now</a></li>
+        <li><a href="apply.html" class="active" aria-current="page">Apply Now</a></li>
         <li><a href="about.html">About Our Team</a></li>
     </ul>
 </nav>
@@ -35,61 +35,70 @@
 
 <section id="hero-section">
     <h2>Apply for a Position</h2>
-    <p>Please complete the application form below.</p>
+    <p>Please complete the application form below. Fields marked with an asterisk (*) are required.</p>
 </section>
 
-<form action="formtest.php" method="post" class="application-form">
+<form action="formtest.php" method="post" class="application-form" novalidate>
 
 <h2>Job Application Form</h2>
 
 <div class="form-grid">
 
+<p class="form-section-title">Position</p>
+
+<div class="full-width">
+<label for="jobref" class="required">Job Reference Number</label>
+<select id="jobref" name="jobref" required aria-describedby="jobref-hint">
+<option value="">Select a position</option>
+<option value="DLR01">Digital Learning Officer — DLR01</option>
+<option value="WEB02">Web Content Coordinator — WEB02</option>
+</select>
+<span class="hint" id="jobref-hint">Choose the position you're applying for.</span>
+</div>
+
+<p class="form-section-title">Personal Details</p>
+
 <div>
-<label for="jobref">Job Reference Number</label>
-<input type="text" id="jobref" name="jobref" pattern="[A-Za-z0-9]{5}" required>
+<label for="fname" class="required">First Name</label>
+<input type="text" id="fname" name="fname" maxlength="20" pattern="[A-Za-z]+" required autocomplete="given-name">
 </div>
 
 <div>
-<label for="fname">First Name</label>
-<input type="text" id="fname" name="fname" maxlength="20" pattern="[A-Za-z]+" required>
+<label for="lname" class="required">Last Name</label>
+<input type="text" id="lname" name="lname" maxlength="20" pattern="[A-Za-z]+" required autocomplete="family-name">
 </div>
 
 <div>
-<label for="lname">Last Name</label>
-<input type="text" id="lname" name="lname" maxlength="20" pattern="[A-Za-z]+" required>
-</div>
-
-<div>
-<label for="dob">Date of Birth</label>
-<input type="date" id="dob" name="dob" required>
+<label for="dob" class="required">Date of Birth</label>
+<input type="date" id="dob" name="dob" required autocomplete="bday">
 </div>
 
 <div class="full-width">
 <fieldset>
 <legend>Gender</legend>
 
-<label><input type="radio" name="gender" value="Male" required> Male</label>
-
-<label><input type="radio" name="gender" value="Female"> Female</label>
-
+<label><input type="radio" name="gender" value="Female" required> Female</label>
+<label><input type="radio" name="gender" value="Male"> Male</label>
 
 </fieldset>
 </div>
 
+<p class="form-section-title">Contact &amp; Address</p>
+
 <div class="full-width">
-<label for="address">Street Address</label>
-<input type="text" id="address" name="address" maxlength="40" required>
+<label for="address" class="required">Street Address</label>
+<input type="text" id="address" name="address" maxlength="40" required autocomplete="street-address">
 </div>
 
 <div>
-<label for="suburb">Suburb / Town</label>
-<input type="text" id="suburb" name="suburb" maxlength="40" required>
+<label for="suburb" class="required">Suburb / Town</label>
+<input type="text" id="suburb" name="suburb" maxlength="40" required autocomplete="address-level2">
 </div>
 
 <div>
-<label for="state">State</label>
+<label for="state" class="required">State</label>
 
-<select id="state" name="state" required>
+<select id="state" name="state" required autocomplete="address-level1">
 
 <option value="">Select State</option>
 
@@ -107,19 +116,25 @@
 </div>
 
 <div>
-<label for="postcode">Postcode</label>
-<input type="text" id="postcode" name="postcode" pattern="[0-9]{4}" required>
+<label for="postcode" class="required">Postcode</label>
+<input type="text" id="postcode" name="postcode" pattern="[0-9]{4}" maxlength="4" required
+       aria-describedby="postcode-hint" autocomplete="postal-code" inputmode="numeric">
+<span class="hint" id="postcode-hint">4 digits, e.g. 3000</span>
 </div>
 
 <div>
-<label for="email">Email</label>
-<input type="email" id="email" name="email" required>
+<label for="email" class="required">Email</label>
+<input type="email" id="email" name="email" required autocomplete="email">
 </div>
 
 <div>
-<label for="phone">Phone Number</label>
-<input type="tel" id="phone" name="phone" pattern="[0-9]{8,12}" required>
+<label for="phone" class="required">Phone Number</label>
+<input type="tel" id="phone" name="phone" pattern="[0-9]{8,12}" required
+       aria-describedby="phone-hint" autocomplete="tel" inputmode="numeric">
+<span class="hint" id="phone-hint">8 to 12 digits, no spaces or dashes.</span>
 </div>
+
+<p class="form-section-title">Skills &amp; Experience</p>
 
 <div class="full-width">
 
@@ -128,13 +143,9 @@
 <legend>Skills</legend>
 
 <label><input type="checkbox" name="skills[]" value="HTML"> HTML</label>
-
 <label><input type="checkbox" name="skills[]" value="CSS"> CSS</label>
-
 <label><input type="checkbox" name="skills[]" value="JavaScript"> JavaScript</label>
-
 <label><input type="checkbox" name="skills[]" value="PHP"> PHP</label>
-
 <label><input type="checkbox" name="skills[]" value="Other"> Other</label>
 
 </fieldset>
@@ -142,11 +153,22 @@
 </div>
 
 <div class="full-width">
-
 <label for="otherskills">Other Skills</label>
+<textarea id="otherskills" name="otherskills" aria-describedby="otherskills-hint"></textarea>
+<span class="hint" id="otherskills-hint">Optional — list any additional skills relevant to this role.</span>
+</div>
 
-<textarea id="otherskills" name="otherskills"></textarea>
+<div class="full-width">
+<label for="resume">Resume / CV</label>
+<div class="file-upload">
+<input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" aria-describedby="resume-hint">
+</div>
+<span class="hint" id="resume-hint">Optional — PDF or Word document, up to 5MB.</span>
+</div>
 
+<div class="full-width declaration">
+<input type="checkbox" id="declaration" name="declaration" required aria-describedby="declaration-hint">
+<label for="declaration">I confirm that the information provided in this application is true and accurate to the best of my knowledge. *</label>
 </div>
 
 </div>

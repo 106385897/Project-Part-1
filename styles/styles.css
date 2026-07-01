@@ -676,6 +676,32 @@ nav {
     color:#081935;
 }
 
+.required::after{
+    content:" *";
+    color:#b58e42;
+}
+
+.hint{
+    display:block;
+    margin-top:6px;
+    font-size:0.85rem;
+    font-weight:normal;
+    color:#666;
+}
+
+.form-section-title{
+    grid-column:1 / 3;
+    color:#081935;
+    font-size:1.1rem;
+    margin-top:15px;
+    padding-bottom:8px;
+    border-bottom:1px solid #eeeeee;
+}
+
+.form-section-title:first-of-type{
+    margin-top:0;
+}
+
 .application-form input,
 .application-form select,
 .application-form textarea{
@@ -691,6 +717,12 @@ nav {
 .application-form textarea:focus{
     outline:none;
     border:2px solid #b58e42;
+}
+
+.application-form input:user-invalid,
+.application-form select:user-invalid{
+    border-color:#b23a48;
+    background-color:#fbebec;
 }
 
 .application-form textarea{
@@ -713,6 +745,34 @@ nav {
     display:inline-block;
     margin-right:20px;
     font-weight:normal;
+}
+
+.file-upload{
+    border:1px dashed #ccc;
+    padding:12px;
+    border-radius:5px;
+    background:#f9f9f9;
+}
+
+.declaration{
+    display:flex;
+    align-items:flex-start;
+    gap:12px;
+    background:#f8f8f8;
+    padding:15px;
+    border:1px solid #eeeeee;
+    border-radius:5px;
+}
+
+.declaration input{
+    width:auto;
+    margin-top:4px;
+}
+
+.declaration label{
+    font-weight:normal;
+    margin-bottom:0;
+    color:#333333;
 }
 
 .form-buttons{
@@ -754,6 +814,10 @@ nav {
 }
 
 .full-width{
+    grid-column:1;
+}
+
+.form-section-title{
     grid-column:1;
 }
 
