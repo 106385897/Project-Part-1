@@ -1,7 +1,4 @@
-/**Maliki/
-
-   Base Styles & Reset 
-   ========================================================================== */
+/**Maliki/ */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -285,11 +282,7 @@ footer {
         gap: 15px;
     }
 }
-/*Khaled
-
-/* ==========================================================================
-   Base Styles & Reset 
-   ========================================================================== */
+/*Khaled-Index page */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -575,10 +568,8 @@ footer {
     }
 }
 
-/* ==========================
-   Apply Page
-========================== */
-/*nahan*/
+
+/*Nahan-Apply Page*/
 .logo {
     width: 180px;
     height: auto;
@@ -831,7 +822,7 @@ nav {
 }
 
 
-
+/*Job Page -Khaled*/
 
 .job-card{
 
