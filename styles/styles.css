@@ -117,8 +117,6 @@ main {
     margin: 20px 0;
 }
 
-/* Force solid black bullets at every list level in the content sections
-   (browsers default nested <ul> bullets to hollow circles) */
 .content-section ul {
     list-style-type: disc;
     color: #081935;
